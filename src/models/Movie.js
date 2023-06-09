@@ -11,10 +11,6 @@ export const movie = sequelize.define(
         },
         name_movie: {
             type: DataTypes.STRING(100),
-            allowNull: false,
-            validate: {
-                notEmpty: true,
-            },
         },
         anio: {
             type: DataTypes.INTEGER,

@@ -25,9 +25,9 @@ export const getMovie = async (req, res) => {
 
 export const createMovie = async (req, res) => {
     try {
-        const { name, anio } = req.body;
+        const { name_movie, anio } = req.body;
         let newMovie= await movie.create({
-          name,
+          name_movie,
           anio
         });
         res.json(newMovie);
